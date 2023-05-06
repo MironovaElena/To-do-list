@@ -19,4 +19,8 @@ btn.addEventListener('click',()=>{
     item.addEventListener('click',()=>{
         item.classList.add('toDoCompleted'); //вычеркиваем дела
     })
+    
+    item.addEventListener('dblclick',function(){
+        toDoContainer.removeChild(item);// удаляем с помощью двух кликов
+    })
 })
